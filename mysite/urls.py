@@ -15,11 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings  # 増えた
+from django.conf.urls.static import static  # 増えた
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
     path('myapp/', include('myapp.urls')),
     path('diary/', include('diary.urls')),
-    path('', include('employee.urls')),
-    path('admin/', admin.site.urls),
+    path('employee/', include('employee.urls')),
+    path('', include('videos.urls')),
 ]
+
+# 開発環境時のみ、Djangoアプリケーション側でメディアファイルを配信する
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

@@ -1,0 +1,6 @@
+videos filter=lfs diff=lfs merge=lfs -text
+media filter=lfs diff=lfs merge=lfs -text
+media/uploads/2020/05/29/7C778515-EE2A-4665-8A75-BD8B98C8AD90.mov filter=lfs diff=lfs merge=lfs -text
+media/uploads/2020/05/29/C7B6806E-2002-47C5-B75B-46D92FF0A86D.mp4 filter=lfs diff=lfs merge=lfs -text
+media/uploads/2020/05/29/tmp_v4738025179074991399.mp4 filter=lfs diff=lfs merge=lfs -text
+media/uploads/2020/05/29/tmp_v4738025179074991399_FG85kfC.mp4 filter=lfs diff=lfs merge=lfs -text
